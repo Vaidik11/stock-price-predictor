@@ -134,7 +134,7 @@ def sentiment():
     formatted_sdate = sdate.strftime('%Y%m%dT%H%M')
     endate=datetime.datetime.strptime(str(end_date), '%Y-%m-%d')
     formatted_enddate=endate.strftime('%Y%m%dT%H%M')
-    url = 'https://www.alphavantage.co/query?function=NEWS_SENTIMENT&tickers='+ option + '&time_from='+ formatted_sdate +'&time_to='+formatted_enddate+'&apikey=KX3JFZ3XM314DXAQ'
+    url = 'https://www.alphavantage.co/query?function=NEWS_SENTIMENT&tickers='+ option + '&time_from='+ formatted_sdate +'&time_to='+formatted_enddate+'&apikey=MZ4Q0EB9NUQUEC9Y'
     r = requests.get(url)
     data = r.json()
     ls = []
